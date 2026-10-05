@@ -1,6 +1,6 @@
 # WeTV App Reviews Multi-Class Sentiment Analysis
 
-Proyek analisis sentimen multi-kelas (Positif, Netral, Negatif) pada ulasan aplikasi **WeTV** di Google Play Store Indonesia. Proyek ini membandingkan algoritma *Machine Learning* klasik dengan pendekatan *Deep Learning* sekuensial (BiLSTM) menggunakan skema pelabelan berbasis leksikon (*lexicon-based labeling*).
+Proyek analisis sentimen multi-kelas (Positif, Netral, Negatif) pada ulasan aplikasi **WeTV** di Google Play Store Indonesia. Proyek ini membandingkan algoritma _Machine Learning_ klasik dengan pendekatan _Deep Learning_ sekuensial (BiLSTM) menggunakan skema pelabelan berbasis leksikon (_lexicon-based labeling_).
 
 ---
 
@@ -9,7 +9,7 @@ Proyek analisis sentimen multi-kelas (Positif, Netral, Negatif) pada ulasan apli
 - **Sumber Data:** Google Play Store ulasan aplikasi WeTV (`com.tencent.qqlivei18n`)
 - **Skala Data:** $\ge$ 10.000 sampel ulasan bahasa Indonesia
 - **Kelas Target:** 3 Kelas (`Positif`, `Netral`, `Negatif`)
-- **Metode Pelabelan:** *Lexicon-Based Polarity Scoring* (InSet / VADER Bahasa Indonesia)
+- **Metode Pelabelan:** _Lexicon-Based Polarity Scoring_ (InSet / VADER Bahasa Indonesia)
 - **Arsitektur Model:**
   - **Skema 1:** TF-IDF + Support Vector Machine (Linear SVM)
   - **Skema 2:** TF-IDF (N-gram) + Logistic Regression / Random Forest
@@ -25,16 +25,12 @@ Proyek analisis sentimen multi-kelas (Positif, Netral, Negatif) pada ulasan apli
 
 ---
 
-## 📂 Struktur Direktori
+## Struktur Direktori
 
 ```text
-├── data/
-│   ├── raw/                 # Dataset mentah hasil scraping
-│   └── processed/           # Dataset bersih yang telah dilabeli leksikon
-├── notebooks/
-│   └── wetv_sentiment_analysis.ipynb   # Notebook pengerjaan utama
-├── scripts/
-│   ├── scrape_playstore.py  # Script scraping Python mandiri
-│   └── lexicon_labeler.py   # Modul pelabelan polaritas teks
-├── requirements.txt         # Daftar dependensi pustaka
-└── README.md                # Dokumentasi proyek
+├── wetv-scraping.ipynb             # Script scraping Python mandiri
+├── wetv-reviews-raw.csv   # dataset mentah hasil scraping
+├── wetv-sentiment-analysis.ipynb   # Notebook pengerjaan utama
+├── requirements.txt                # Daftar dependensi pustaka
+└── README.md                       # Dokumentasi proyek
+```
