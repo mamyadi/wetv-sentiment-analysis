@@ -29,7 +29,7 @@ Proyek analisis sentimen multi-kelas (Positif, Netral, Negatif) pada ulasan apli
 
 ```text
 ├── wetv-scraping.ipynb             # Script scraping Python mandiri
-├── wetv-reviews-raw.csv   # dataset mentah hasil scraping
+├── wetv-reviews-raw.csv            # dataset mentah hasil scraping
 ├── wetv-sentiment-analysis.ipynb   # Notebook pengerjaan utama
 ├── requirements.txt                # Daftar dependensi pustaka
 └── README.md                       # Dokumentasi proyek
