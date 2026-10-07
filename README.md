@@ -42,8 +42,7 @@ Proyek analisis sentimen multi-kelas (Positif, Netral, Negatif) pada ulasan apli
 
 ```text
 ├── wetv-scraping.ipynb               # Notebook scraping ulasan Google Play Store
-├── wetv-reviews-raw.csv              # Dataset ulasan mentah hasil scraping
-├── wetv-sentiment-analysis.ipynb     # Notebook utama (EDA, Preprocessing, Modeling, Evaluasi)
+├── wetv-sentiment-analysis.ipynb     # Notebook utama
 ├── requirements.txt                  # Dokumentasi dependensi pustaka environment
 └── README.md                         # Dokumentasi resmi proyek
 ```
